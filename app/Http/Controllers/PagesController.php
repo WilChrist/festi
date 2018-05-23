@@ -11,6 +11,9 @@ use App\Http\Requests;
 
 class PagesController extends Controller
 {
+    public function index(){
+        return view(config('theme.default.pages').'.welcome');
+    }
     /**
      * Display the homepage.
      */

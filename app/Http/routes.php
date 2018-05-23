@@ -18,7 +18,7 @@
 */
 Route::group(['middleware' => 'web'], function () {
     //homepage
-    Route::get('/', ['as' => 'web.home', 'uses' => 'PagesController@home']);
+    Route::get('/', ['as' => 'web.home', 'uses' => 'PagesController@index']);
     Route::get('blog', ['as' => 'web.blog', 'uses' => 'PagesController@home']);
     Route::get('/blog/{posts}', ['as' => 'web.post', 'uses' => 'PagesController@post']);
     Route::get('/category/{categories}', ['as' => 'web.category', 'uses' => 'PagesController@category']);
